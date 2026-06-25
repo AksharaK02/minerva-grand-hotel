@@ -1,0 +1,165 @@
+/* General */
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#003366;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:#e9f2ff;
+}
+
+.hero h1{
+    color:#003366;
+}
+
+.btn{
+    display:inline-block;
+    background:#003366;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    margin:10px;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#0055aa;
+}
+
+/* Sections */
+
+section{
+    padding:30px;
+}
+
+/* Cards */
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    border:1px solid #ddd;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Form */
+
+form{
+    max-width:500px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#003366;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0055aa;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+footer h3,
+footer h4{
+    margin-bottom:10px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.card-container{
+    flex-direction:column;
+}
+
+.gallery img{
+    width:100%;
+    height:auto;
+}
+
+.hero{
+    padding:50px 15px;
+}
+
+}
